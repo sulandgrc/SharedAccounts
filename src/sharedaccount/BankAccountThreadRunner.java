@@ -7,6 +7,8 @@ package sharedaccount;
 public class BankAccountThreadRunner {
 
     public static void main(String[] args) {
+        // construct the shared data resource - see unpredictable results
+        // program is NOT thread safe
         BankAccount account = new BankAccount();
         final double AMOUNT = 100;
         final int REPETITIONS = 100;

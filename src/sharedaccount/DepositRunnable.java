@@ -4,7 +4,7 @@ package sharedaccount;
  * A deposit runnable makes periodic deposits to a bank account.
  */
 public class DepositRunnable implements Runnable {
-    private static final int DELAY = 1;
+    private static final int DELAY = 1; // 1 millisecond
     private BankAccount account;
     private double amount;
     private int count;
